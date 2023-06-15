@@ -62,7 +62,7 @@ export async function getStaticPaths() {
   }));
   //console.log(mongoMeetupIds);
   return {
-    fallback: false,
+    fallback: "blocking",
     paths: mongoMeetupIds,
   };
 }
